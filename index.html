@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- main div -->
+    <div class="w-[100vw] h-[100vh] overflow-hidden bg-[#CF9FFF] flex flex-col justify-center items-center gap-10">
+
+        <h1 class="text-center text-5xl font-bold text-[#ffffff]">CALCULATOR</h1>
+
+        <!-- input div -->
+         <div class="flex gap-10 p-16">
+            <input id="num1" type="text" class="h-10 text-center" placeholder="number-1">
+            <input id="num2" type="text" class="h-10 text-center" placeholder="number-2">
+         </div>
+        <!-- output div -->
+         <div>
+            <input id="num3" type="text" class="h-10 text-center" placeholder="result" readonly>
+         </div>
+         
+         <!-- buttons -->
+         <div class="flex bg-white justify-around h-[40px]">
+
+            <!-- plus -->
+            <button id="plus" class="border-r border-black px-8 active:bg-gray-200 " onclick="addition()">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+           
+            <!-- minus -->
+            <button id="minus" class="border-r border-black px-8 active:bg-gray-200" onclick="substraction()">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <!-- multiply -->
+            <button id="multiply" class="border-r border-black px-8 active:bg-gray-200" onclick="multiplication()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- devide -->
+            <button id="devide" class=" px-8 active:bg-gray-200" onclick="division()">
+                <i class="fa-solid fa-divide active:bg-gray-200"></i>
+            </button>
+         </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
